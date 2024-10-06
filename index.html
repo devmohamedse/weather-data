@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Weather app providing real-time weather forecasts.">
+    <meta name="keywords" content="weather, forecast, live, cameras, news">
+    <meta name="author" content="Your Company">
+    <title>Weather Forecast</title>
+
+  
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+</head>
+<body>
+    <div class="site-content">
+        <!-- Header Section -->
+        <header class="site-header">
+            <div class="container">
+                <a class="branding" href="/">
+                    <img src="./images/logo@2x.png" alt="Website Logo" class="logo">
+                    <div class="logo-type">
+                        <h1 class="site-title">Weather</h1>
+                        <small class="site-description">tagline goes here</small>
+                    </div>
+                </a>
+
+                <!-- Main Navigation -->
+                <nav class="main-navigation">
+                    <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+                    <ul class="menu">
+                        <li class="menu-item current-menu-item"><a href="/">Home</a></li>
+                        <li class="menu-item"><a href="#">News</a></li>
+                        <li class="menu-item"><a href="#">Live Cameras</a></li>
+                        <li class="menu-item"><a href="#">Photos</a></li>
+                        <li class="menu-item"><a href="/contact">Contact</a></li>
+                    </ul> 
+                </nav>
+
+                <!-- Mobile Navigation -->
+                <div class="mobile-navigation"></div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero" style="background-image: url('images/banner.png');">
+            <div class="container">
+                <form class="find-location" id="location-form">
+                    <input type="text" placeholder="Find your location..." id="search">
+                    <input type="button" value="Find" id="submit">
+                </form>
+            </div>
+        </section>
+
+        <!-- Forecast Table Section -->
+        <section class="forecast-table">
+            <div class="container">
+                <div class="forecast-container" id="forecast">
+                    <!-- Forecast details will be inserted dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <form action="#" class="subscribe-form">
+                            <input type="email" placeholder="Enter your email to subscribe..." aria-label="Email">
+                            <button type="submit">Subscribe</button>
+                        
+
+
+                            <!-- <form class="find-location" id="location-form">
+                                <input type="text" placeholder="Find your location..." id="search">
+                                <input type="button" value="Find" id="submit">
+                            </form> -->
+                        </form>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1">
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" aria-label="Google Plus"><i class="fa-brands fa-google"></i></a>
+                            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <p class="colophon">© 2014 Company name. Designed by Themezy. All rights reserved.</p>
+            </div>
+        </footer> 
+    </div>
+
+    
+    <script src="./js/index.js"></script>
+</body>
+</html>
